@@ -71,5 +71,61 @@
         
 # armst(153)
 
-#tc:
-#sc:
+#tc:O(log10(n))
+#sc:O(1)
+
+
+#================================================
+#prime factors in a list
+# def primef(num):
+#     c=num
+#     list=[]
+#     for i in range (1,num+1):
+#         if c%i==0:
+#             list.append(i)
+#     return list
+# print(primef(10))
+
+#tc:O(n)
+#sc:O(k) k should be total number of factors
+
+#>>>>>>>>>>>>>>>>better solution
+# def primef(num):
+#     c=num
+#     list=[]
+#     for i in range (1,num//2):
+#         if c%i==0:
+#             list.append(i)
+#     list.append(num)
+#     return list
+# print(primef(20))
+
+# tc:O(n/2)~~O(n)
+# sc:O(k) k should be total number of factors
+
+
+#>>>>>>>>>>>>optimal solution
+# from math import sqrt
+# def primef(num):
+#     c=num
+#     list=[]
+#     for i in range (1,int(sqrt(num))+1):
+#         if c%i==0:
+#             list.append(i)
+#             if c//i!=i:
+#                 list.append(c//i)
+#     list.sort()#O(nlog(n)
+#     return list
+# print(primef(10))
+
+#tc:O(nlog(n))+O(√n)
+#sc:O(k) k should be total number of factors
+
+
+
+
+#==================================================
+
+
+
+        
