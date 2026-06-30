@@ -5,7 +5,7 @@ nums=[4,3,5,6,7,2,1,0]
 
 
 def partition(nums,low,high):
-    pivot=nums[low]
+    pivot=nums[0]
     i=low
     j=high
     while i<j:
@@ -17,6 +17,8 @@ def partition(nums,low,high):
             nums[i],nums[j]=nums[j],nums[i]
     nums[low],nums[j]=nums[j],nums[low]
     return j
+
+
 
 def quicksort(nums,low,high):
     if low<high:
