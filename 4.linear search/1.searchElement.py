@@ -5,5 +5,3 @@ n=len(n2)
 for i in range(0,n):
     if n2[i]==s:
         print(i)
-    else:
-        print(-1)

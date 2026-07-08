@@ -1,4 +1,4 @@
-# print("missing number in the array")
+print("missing number in the array")
 
 
 nums=[9,6,4,2,3,5,7,0,1]

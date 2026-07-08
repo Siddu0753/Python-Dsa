@@ -23,7 +23,7 @@ def twoSum(nums, target):
       n=len(nums)
       result={}
       need=0
-      final=[]
+      
       for i in range(0,n):  
             need=target-nums[i]
             if need not in result:
@@ -33,3 +33,4 @@ def twoSum(nums, target):
                 
        
 print(twoSum(nums, target))
+# tc:O(n),sc:O(n)

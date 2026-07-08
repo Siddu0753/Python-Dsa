@@ -13,3 +13,5 @@ def findMaxConsecutiveOnes(nums):
     return maxcount
 
 print(findMaxConsecutiveOnes(nums))
+
+# tc:O(n),sc:O(1)

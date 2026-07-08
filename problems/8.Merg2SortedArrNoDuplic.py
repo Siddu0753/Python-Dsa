@@ -26,3 +26,6 @@ while j<m:
             result.append(n2[j])
     j+=1
 print(result)
+
+#Time complexity:O(n+m)
+#Space complexity:O(1) or in worst case :O(n+m)

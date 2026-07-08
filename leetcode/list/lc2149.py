@@ -5,16 +5,16 @@ nums = [2, -3, -1, 4]
 
 def rearr(nums):
     
-    n=len(nums)
-    result=[0]*n
+    
+    result=[0]*len(nums)
     pv=0
     nv=1
-    for i in range(0,n):  
-        if nums[i]>0 and pv<n:
-            result[i]=nums[pv]
+    for num in nums:  
+        if num>0:
+            result[pv]=num
             pv+=2
-        elif nums[i]<0 and nv<n:
-            result[i]=nums[nv]
+        elif num<0 :
+            result[nv]=num
             nv+=2
             
     return result

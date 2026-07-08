@@ -34,6 +34,7 @@ print(n1)
 
 
 ##############################################
+print("using conditional statement")
 n2=[1,0,2,4,3,0,0,3,5,1]
 
 n=len(n2)
@@ -54,7 +55,6 @@ def mve(n2):
             i+=1
         j+=1
     return n2
-
 
 print(mve(n2))
 

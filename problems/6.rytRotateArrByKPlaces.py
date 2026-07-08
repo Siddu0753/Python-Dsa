@@ -13,6 +13,7 @@ def rot(nums):
 
 print(rot(nums))
 
+#######################################
 print("optimized solution")
 #optimized
 nums1=[5,-2,3,9,0,6,10,7]
@@ -28,7 +29,7 @@ def rot(nums1):
     return nums1
 
 print(rot(nums1))
-
+############################################
 print("without function")
 #without function
 nums2=[5,-2,3,9,0,6,10,7]
@@ -37,7 +38,7 @@ for _ in range(0,k):
     e=nums2.pop()
     nums2.insert(0,e)
 print(nums2)
-
+#############################################
 print("through slicing")
 #through slicing
 nums3=[5,-2,3,9,0,6,10,7]
@@ -45,7 +46,7 @@ k=5
 n=len(nums)
 nums3[:]=nums3[n-k:]+nums3[:n-k]
 print(nums3)
-
+#########################################################
 print("different method same solution")
 #different method same solution
 nums4=[5,-2,3,9,0,6,10,7]
