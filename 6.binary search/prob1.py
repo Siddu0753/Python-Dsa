@@ -1,4 +1,5 @@
-
+###############################################
+# iterative approach(prefered)
 
 def binarysearch(nums,target):
     n=len(nums)
@@ -15,3 +16,27 @@ def binarysearch(nums,target):
     return -1
 
 print(binarysearch([1,2,3,4,5],5))
+
+################################################
+#recursive approach
+
+def binarysearch(nums,low,high):
+    n=len(nums)
+    target=5
+    if low>high:
+        return -1
+
+    mid=(low+high)//2
+    if nums[mid]==target:
+        return mid
+    elif nums[mid]<target:
+        binarysearch(nums,mid+1,high)
+    else:
+        return binarysearch(nums,low,mid-1)
+
+
+print(binarysearch([1,2,3,4,5],5))
+
+##################################################
+# tc=log base 2 of n were n is the number of elements
+# sc=O(1)

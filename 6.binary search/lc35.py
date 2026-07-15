@@ -18,4 +18,6 @@ def searchInsert( nums, target):
 
 print(searchInsert([1,3,5,6],5))
 
+# tc:log base2 n,sc:O(1)
+
             

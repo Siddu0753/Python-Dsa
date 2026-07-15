@@ -83,4 +83,6 @@ for i in range(0,n):
                 l-=1
 print(ans)
 
+# O(n^2*n)~O(n^3), sc:O(1)or O(no of ans)
+
 

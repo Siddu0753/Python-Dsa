@@ -1,5 +1,5 @@
-
-nums = [0]
+print("Longest Consecutive Sequence")
+nums = [100,4,200,1,3,2]
 
 ml=0
 for num in nums:
