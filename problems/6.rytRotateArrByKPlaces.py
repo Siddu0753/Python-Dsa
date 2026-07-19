@@ -44,13 +44,14 @@ print("through slicing")
 nums3=[5,-2,3,9,0,6,10,7]
 k=5
 n=len(nums)
+k=k%n
 nums3[:]=nums3[n-k:]+nums3[:n-k]
 print(nums3)
 #########################################################
 print("different method same solution")
 #different method same solution
 nums4=[5,-2,3,9,0,6,10,7]
-k=5
+k=3
 n=len(nums4)
 def rev(nums4,left,right):
     
